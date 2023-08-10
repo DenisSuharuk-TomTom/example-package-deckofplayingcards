@@ -15,7 +15,7 @@ import PackageDescription
 let package = Package(
     name: "DeckOfPlayingCards",
     products: [
-        .library(name: "DeckOfPlayingCards", targets: ["DeckOfPlayingCards"]),
+        .library(name: "DeckOfPlayingCards", type: .dynamic, targets: ["DeckOfPlayingCards"]),
     ],
     dependencies: [
         .package(name: "PlayingCard",
